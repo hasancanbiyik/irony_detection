@@ -10,7 +10,7 @@ The goal is to build and evaluate transformer-based models that can distinguish 
 This marks an **early milestone** — a *baby step* toward a full irony detection pipeline.  
 At this stage, the focus is on preparing the **[Ironic Corpus dataset](https://www.kaggle.com/datasets/rtatman/ironic-corpus)** for model fine-tuning.
 
-### 🔹 About the Dataset
+### About the Dataset
 
 - **Source:** [Rachael Tatman — Ironic Corpus (Kaggle)](https://www.kaggle.com/datasets/rtatman/ironic-corpus)  
 - **Content:** 1,950 Reddit comments labeled as *ironic (1)* or *not ironic (-1)*  
