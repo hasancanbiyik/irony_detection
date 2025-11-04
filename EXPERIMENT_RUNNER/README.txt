@@ -1,3 +1,8 @@
+The code for fine-tuning the model (EXPERIMENT_RUNNER) was provided by Patrick Lee (https://scholar.google.com/citations?user=SsTghTYAAAAJ&hl=en)
+The configurations for the first experiment was decided upon existing research.
+
+
+
 QUICK START INSTRUCTIONS:
 
 0. Prepare an experiment folder consisting of files called "train_X.csv", "val_X.csv", and "test_X_LANG.csv" (if only testing on one lang, keep LANG the same, e.g. "test_0_turkish.csv", "test_1_turkish.csv", etc.)
