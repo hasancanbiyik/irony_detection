@@ -1,22 +1,30 @@
-# install dependencies
-python3 -m pip install --upgrade pip
+import re
+import pandas as pd
 
-# python3 -m pip install \
-#     torch \
-#     torchvision \
-#     torchaudio \
-#     --extra-index-url https://download.pytorch.org/whl/cu116
+INPUT_FILE = "/Users/hasancan/Downloads/messy_irony_data.csv"
+OUTPUT_FILE = "balanced_dataset_adjusted.csv"
 
-python3 -m pip install --no-cache-dir -r requirements.txt
+TEXT_COL = "text"
+LABEL_COL = "label"
+LITERAL_LABEL = 0
+IRONIC_LABEL = 1
 
-# export MODEL_DIR=saved_models
-# export CORPUS_DIR=train_folder
+# literal constraints
+MIN_WORDS_LITERAL = 5
+MAX_WORDS_LITERAL = 50
+REQUIRE_SINGLE_SENTENCE_LITERAL = True
+REMOVE_NEWLINES_LITERAL = True
 
-# mkdir -p $MODEL_DIR
-# mkdir -p $CORPUS_DIR
+# ironic cleanup
+NORMALIZE_NEWLINES_IRONIC = True  # turn \n into space instead of dropping
 
-# python3 src/iterator.py
-python3 src/launch.py 
+# how much difference allowed between classes (0.10 = 10%)
+ALLOWED_DIFF_RATIO = 0.10
+
+def count_sentences(text: str) -> int:
+    parts = re.split(r'[.!?]+', text)
+    parts = [p.strip() for p in parts if p.strip()]
+    return len(parts)
 
 # 1) load
 df = pd.read_csv(INPUT_FILE)
