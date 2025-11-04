@@ -8,6 +8,8 @@ from train import run_trainer
 ''' (0) SET EXPERIMENTAL DIRECTORY '''
 ####################################################################
 EXP_DIR = "/nfs/storage1/home/biyikh/irony_detection/experiment_one_nov3" # filepath to directory containing train/val/test splits; outputs (e.g. metrics and saved models) will go here
+# this would need to be updated as follows:
+# .../irony_detection/initial_ft_splits
 
 ####################################################################
 ''' (1) CONFIGURE EXPERIMENT SETTINGS (AS ENVIRONMENT VARIABLES) '''
