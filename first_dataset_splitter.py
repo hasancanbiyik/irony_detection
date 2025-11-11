@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 # Load your balanced dataset (change maybe needed!)
-df = pd.read_csv("/Users/hasancan/Desktop/irony_detection/datasets/balanced_dataset_adjusted.csv")
+df = pd.read_csv("/Users/hasancan/Desktop/irony_detection/datasets/datasets/first_dataset_messy.csv
 
 X = df["text"]
 y = df["label"]
