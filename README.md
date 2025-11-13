@@ -1,93 +1,68 @@
-# Irony Detection Project
+# Irony Detection with Fine-Tuned LLMs
 
-This repository documents our ongoing research on **fine-tuning large language models (LLMs)** for **irony detection** in English utterances.  
-The main goal is to build and evaluate transformer-based models that can distinguish *ironic* vs *literal* meaning in utterances that we will get from the students participating in this research.
+Research project focused on fine-tuning transformer models to detect irony in short English utterances (≤10 words) for educational assessment.
 
----
+## Objective
 
-## Current Stage — Finetuning and evaluating the cardiffnlp/twitter-roberta-base-irony model (November 11th, 2025)
+Build a model capable of distinguishing ironic vs. literal meaning with 90-95% accuracy for student response analysis.
 
-We have prepared the **[Ironic Corpus dataset](https://www.kaggle.com/datasets/rtatman/ironic-corpus)** dataset for fine-tuning and evaluating the model.
-The pre-processing and balancing code can be found here: [Clean and Balance](https://github.com/hasancanbiyik/irony_detection/blob/main/first_dataset_clean_and_balance.py)
-The splitting code (80% training, 10% testing, and 10% validation) and stratification can be found here: [Dataset Splitter](https://github.com/hasancanbiyik/irony_detection/blob/main/first_dataset_splitter.py)
+## Current Status
 
-### About the Dataset
+### Base Model Performance
+- **Model**: [cardiffnlp/twitter-roberta-base-irony](https://huggingface.co/cardiffnlp/twitter-roberta-base-irony)
+- **Sample Dataset (48 examples)**: Accuracy 48.9%, Precision 66.7%, Recall 22.2%, F1 33.3%
+- **Issue**: Model too conservative, misses most ironic instances
 
-- **Source:** [Rachael Tatman — Ironic Corpus (Kaggle)](https://www.kaggle.com/datasets/rtatman/ironic-corpus)  
-- **Content:** 1,950 Reddit comments labeled as *ironic (1)* or *not ironic (-1)*  
-- **Original Paper:**  
-  Wallace, B. C., Do Kook Choe, L. K., Kertz, L., & Charniak, E. (2014).  
-  *Humans Require Context to Infer Ironic Intent (so Computers Probably do, too).*  
-  In *ACL 2014* (pp. 512–516).  
-  [PDF](http://www.byronwallace.com/static/articles/wallace-irony-acl-2014.pdf)
+### Fine-Tuning Results
 
-**Acknowledgements:** Supported by the Army Research Office (ARO), grant 64481-MA / W9111F-13-1-0406.
+**Dataset**: [Kaggle Ironic Corpus](https://www.kaggle.com/datasets/rtatman/ironic-corpus)
+- **Original**: 1,936 Reddit comments
+- **Cleaned & Balanced**: 654 sentences (327 ironic, 327 literal)
+- **Splits**: 80% train, 10% validation, 10% test (10-fold cross-validation)
 
----
+**Performance** (averaged across folds):
+- Training: **77% accuracy**, F1 0.77, Precision 0.78, Recall 0.77
+- Sample dataset: **55% accuracy**, F1 0.54, Precision 0.58, Recall 0.57
 
-## Step 1: Dataset Cleaning & Balancing Script
+**Key Finding**: Model performs better on training domain (social media) than conversational/script-based text.
 
-The dataset was **quite messy**, containing multi-line entries, inconsistent sentence lengths, and noisy annotations.  
-The script `clean_and_balance.py` helps prepare a clean, balanced dataset for fine-tuning.
+## Repository Structure
 
-### What It Does
+(Under work as of November 12th, 2025)
 
-1. Loads and separates *ironic (1)* vs *literal (0)* examples  
-2. Removes multi-line and overly short/long literal sentences  
-3. Normalizes formatting in ironic sentences  
-4. Balances the dataset, allowing a 5–10% difference between classes  
-5. Saves the cleaned dataset as `balanced_dataset.csv`
+## Data Processing
 
-### Usage
-
+### Cleaning & Balancing
 ```bash
-pip install pandas
-python clean_and_balance.py
+python first_dataset_clean_and_balance.py
 ```
+- Removes multi-line entries and irregular sentence lengths
+- Balances ironic/literal classes
+- Outputs `balanced_dataset.csv`
 
-You can edit configuration variables (e.g. word limits, tolerance) directly inside the script.
-Do not forget to adjust the dataset's directory! It was named as "messy_irony_data" for this project as you can see in the script.
-
-### Example Output
-
+### Creating Splits
+```bash
+python first_dataset_splitter.py
 ```
-[INFO] Literals after cleaning: 327
-[INFO] Ironics after cleaning: 537
-[INFO] Downsampled ironic to match the smaller class.
-========== FINAL COUNTS ==========
-Literals (label 0): 327
-Ironics  (label 1): 327
-Difference: 0 (0.00% of smaller class)
-===================================
-```
-
----
+- Stratified 80-10-10 splits
+- 10-fold cross-validation setup
 
 ## Roadmap
 
-### Phase 1 — Data Preparation (Current)
-- Clean and balance datasets
-- Integrate other irony/sarcasm corpora (Twitter, news, essays)
-
-### Phase 2 — Model Fine-Tuning
-- Fine-tune `cardiffnlp/twitter-roberta-base-irony`
-- Experiment with LoRA and instruction-tuned models (e.g., LLaMA-2, Mistral)
-
-### Phase 3 — Evaluation & Analysis
-- Evaluate on held-out and cross-domain data
-- Compute precision, recall, F1, and interpret model outputs
-
-### Phase 4 — Reporting & Publication
-- Summarize results and qualitative insights
-- Prepare a short paper or technical report
-- Upload trained checkpoints to Hugging Face
-
----
+- [ ] Integrate additional irony/sarcasm datasets
+- [ ] Experiment with domain adaptation techniques
+- [ ] Test LoRA fine-tuning and instruction-tuned models
+- [ ] Cross-domain evaluation (social media → conversational)
+- [ ] Deploy final model and publish results
 
 ## Citation
 
-If you use this dataset, please cite the original paper:
-
+Dataset based on:
 > Wallace, B. C., Do Kook Choe, L. K., Kertz, L., & Charniak, E. (2014).  
 > *Humans Require Context to Infer Ironic Intent (so Computers Probably do, too).*  
-> In *ACL (2)* (pp. 512–516).
+> ACL 2014, pp. 512-516.  
+> [PDF](http://www.byronwallace.com/static/articles/wallace-irony-acl-2014.pdf)
+
+## License
+
+Research project - dataset sourced from Kaggle (Rachael Tatman).
