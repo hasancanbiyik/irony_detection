@@ -1,14 +1,15 @@
 # Irony Detection Project
 
 This repository documents our ongoing research on **fine-tuning large language models (LLMs)** for **irony detection** in English utterances.  
-The goal is to build and evaluate transformer-based models that can distinguish *ironic* vs *literal* meaning in utterances that we will get from the students participating in this research.
+The main goal is to build and evaluate transformer-based models that can distinguish *ironic* vs *literal* meaning in utterances that we will get from the students participating in this research.
 
 ---
 
-## Current Stage — Data Cleaning & Balancing (November 3, 2025)
+## Current Stage — Finetuning and evaluating the cardiffnlp/twitter-roberta-base-irony model (November 11th, 2025)
 
-This marks an **early milestone** — a *baby step* toward a full irony detection pipeline.  
-At this stage, the focus is on preparing the **[Ironic Corpus dataset](https://www.kaggle.com/datasets/rtatman/ironic-corpus)** for model fine-tuning.
+We have prepared the **[Ironic Corpus dataset](https://www.kaggle.com/datasets/rtatman/ironic-corpus)** dataset for fine-tuning and evaluating the model.
+The pre-processing and balancing code can be found here: [Clean and Balance](https://github.com/hasancanbiyik/irony_detection/blob/main/first_dataset_clean_and_balance.py)
+The splitting code (80% training, 10% testing, and 10% validation) and stratification can be found here: [Dataset Splitter](https://github.com/hasancanbiyik/irony_detection/blob/main/first_dataset_splitter.py)
 
 ### About the Dataset
 
