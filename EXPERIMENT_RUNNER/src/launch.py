@@ -19,8 +19,8 @@ EXP_DIR = "/nfs/storage1/home/biyikh/irony_detection/experiment_one_nov3" # file
 # function to set default values for optional settings? 
 
 # model names
-os.environ['MODEL_NAME'] = "cardiffnlp/twitter-roberta-base-irony" # 'dccuchile/bert-base-spanish-wwm-cased' #  'xlm-roberta-large' , 'bert-base-multilingual-cased'
-os.environ['TOKENIZER_NAME'] = "cardiffnlp/twitter-roberta-base-irony" # 'dccuchile/bert-base-spanish-wwm-cased' #  'xlm-roberta-large' , 'bert-base-multilingual-cased'
+os.environ['MODEL_NAME'] = "cardiffnlp/twitter-roberta-base-irony" #  'xlm-roberta-large' , 'bert-base-multilingual-cased'
+os.environ['TOKENIZER_NAME'] = "cardiffnlp/twitter-roberta-base-irony" #  'xlm-roberta-large' , 'bert-base-multilingual-cased'
 os.environ['EXP_DIR'] = EXP_DIR # leave this as is
 os.environ['SAVE_MODELS'] = 'True' # if True, will output best models for each trial into a folder called "saved_models" in EXP_DIR
 
@@ -30,7 +30,7 @@ os.environ['LOG'] = 'in this experiment i am doing something interesting'
 
 # numbers in the first and last filenames (in `corpora` folder) of the experiment; set in `manifest.py`
 os.environ['START_FILENUM'] = "0"
-os.environ['END_FILENUM'] = "9" 
+os.environ['END_FILENUM'] = "10" 
 
 # some of the arguments in TrainingArguments that are commonly adjusted for fine-tuning in `train.py`
 os.environ['NUM_EPOCHS'] = '10'
@@ -42,13 +42,13 @@ os.environ['BATCH_SIZE'] = '4'
 os.environ['TRAIN_RESULTS_CSV'] = f'{EXP_DIR}/results_train.csv' # filename of .csv where training and validation metrics will be output by `train.py`
 os.environ['EARLY_STOPPING_PATIENCE'] = "3" # a callback variable for custom Trainer behavior controlling Patience
 os.environ['LAYERS_TO_FREEZE'] = '[0,1,2,3,4]' # '[0,1,2,3,4,5,6,7]' # '-1'
-os.environ['SPECIAL_TOKENS'] = '-1' # '[\'[PET]\']' # '-1' # '[\'[PET_START]\', \'[PET_END]\']'
+os.environ['SPECIAL_TOKENS'] = '-1' # Skip adding tokens and use default tokenizer
 
 # evaluation settings
 os.environ['EVALUATION'] = 'True' # whether to run evaluation at all
 os.environ['EVAL_STEPS'] = '30'
 os.environ['TEST_RESULTS_CSV'] = f'{EXP_DIR}/results_test.csv' # filename of .csv where test metrics will be output by `train.py`
-os.environ['LANGS'] = "['english']" # "['chinese', 'english', 'spanish', 'yoruba']" # used to select testfiles; i.e., each fine-tuned model will be tested on each of these languages
+os.environ['LANGS'] = "['english']" # because the model and the data is in english.
 os.environ['BULK_TESTING_MODIFIER'] = "-1" # "30" # in `train.py`, adjusts the test_number; useful for multiple training sets e.g. train_31, train_61 that are tested on a single file e.g. test_1 (in which case, use "30"); set to -1 for no bulk testing adjustment
 
 ####################################################################
