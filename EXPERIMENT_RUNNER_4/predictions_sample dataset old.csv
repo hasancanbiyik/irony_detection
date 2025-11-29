@@ -1,0 +1,48 @@
+text,label,predicted_label,confidence_score
+DOROTHY: No Blanche she is upset because they keep changing the taste of coke.,1,0,0.0038753284607082605
+"DOROTHY: I don't know Rose, maybe Marry Poppins has an Italian cousin.",1,1,0.9895368814468384
+DOROTHY: No it√ïs the rose in the kitchen thing.,1,0,0.006965012289583683
+"ROSE: I'm sorry Sophia, but in Dorothy's defence, it sure sounds a lot like her.",1,1,0.9787331223487854
+DOROTHY: Because it wears a little sunbrella Rose.,1,0,0.0059191216714680195
+"DOROTHY: In what Blanche, dog years?",1,1,0.9894436597824097
+"DOROTHY: Rose, you should sit here and watch her hack herself to death",1,1,0.9969139099121094
+"PERSON: I don't know. Somebody bigger and... Yeah, sure. Why not you?",1,1,0.511416494846344
+"SHELDON: Notify the editors of the Oxford English Dictionary. The word ""plenty"" has been redefined to mean ""two.""",1,0,0.008071263320744038
+"HOWARD: I understand your point, but given a choice, Jews always go with Chinese food.",1,0,0.0017988820327445865
+"HOWARD: Yeah, terrific. The other astronauts would love to go hurtling through space with a guy named ""Crash.""",1,1,0.9981157779693604
+"AMY: Hope your hands are steady. It's the width of a single hair. But this is just biology, so I'm sure it's no problem for a genius like you.",1,1,0.9281397461891174
+"LEONARD: Also instead of just living in your mother's house, you could actually live inside her body.",1,0,0.02236040309071541
+"AMY: There they go, fighting again. You'd never hear her talk that way to Sauvignon Blanc.",1,1,0.9933892488479614
+"SHELDON: You know, the holidays are just around the corner. Maybe he wants to see if he can lodge the other testicle up there.",1,1,0.9963439106941223
+PENNY: This is why I've been saying we should keep champagne on ice.,1,1,0.7006328105926514
+HOWARD: It's why my people wandered the desert for 40 years. Took that long to walk it off.,1,0,0.0015723874093964696
+"HOWARD: Sheldon, if you were a robot, and I knew and you didn't...",0,0,0.05800284817814827
+"RAJ: Leonard, may I present, live from New Delhi, Dr. and Mrs. V. M. Koothrappali.",0,0,0.0041792127303779125
+LEONARD: Don't you think looking for a new city to live in is a bit of an overreaction?,0,0,0.17936716973781586
+LEONARD: What did you mean when you said you were going to miss me?,0,0,0.0014681953471153975
+SHELDON: Then buckle up; you're in for a cranky night.,0,1,0.9859583973884583
+"AMY: And if I had a friend, they might have told me that.",0,1,0.9970683455467224
+HOWARD: Let's not talk about this in front of our friends.,0,1,0.9923842549324036
+SHELDON: I can't believe we wasted all that time on our Hulk costumes.,0,0,0.0023934838827699423
+"HOWARD: No, just me, her and a couple of the big wigs. It's part of a bonus she got.",0,1,0.9963078498840332
+AMY: I'm not saying that you're not fun. You're the most fun person I know.,0,0,0.003048891434445977
+"CHANDLER: Uh, so how many cameras are actually on you.",1,1,0.9959406852722168
+CHANDLER: Yeah either that or gloria estefan was right eventually the rhythm is going to get you,1,1,0.9970846772193909
+"CHANDLER: Okay, but if you are not coming back soon, there is pretty much nothing I can do about it",1,0,0.002150152111425996
+"CHANDLER: Oh, wait a minute, I have no one.",1,1,0.9953421354293823
+"CHANDLER: If that doesn't keep kids in school, what will?",1,1,0.9853746891021729
+"CHANDLER: Oh Oh, I am convinced!",1,1,0.9978119134902954
+CHANDLER: Well thank God your livelihood doesn't depend on it.,1,1,0.9981471300125122
+CHANDLER: Oh tons. I am quite the woodsman.,1,1,0.9978640675544739
+"CHANDLER: Oh I see, I thought you just really really liked your new couch.",1,1,0.998145580291748
+"CHANDLER: Well, it will probably slow me down at first. But once I am used to the extra weight, I ll get back on track.",1,0,0.0025542378425598145
+CHANDLER: I'd miss you if I broke up with you. Just trying to be supportive.,0,0,0.0019419463351368904
+JOEY: We got a box.,0,0,0.18533648550510406
+"PERSON: Oh hey, great, you're up. Rachel, this is my sister Krista. Krista, this is Rachel.",0,0,0.06493417918682098
+PERSON: Nobody sees the king!,0,0,0.21673902869224548
+"RACHEL: Yeah, I don't think so Joe.",0,1,0.9842380881309509
+RACHEL: Ohhh!!!!,0,0,0.012730622664093971
+"ROSS: So, I'm sorry I just don't think we should go away together yet.",0,0,0.0023774495348334312
+PHOEBE: Chandler?,0,0,0.47330254316329956
+PHOEBE: The end.,0,1,0.8265822529792786
+"CHANDLER: Oh yeah he has a caretaker his older brother, Ernie. You can't make this stuff up!",0,1,0.9975873231887817
