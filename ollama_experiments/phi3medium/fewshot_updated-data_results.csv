@@ -1,0 +1,29 @@
+text,label,true_label_str,pred_few_shot_baseline
+"I don't know. Somebody bigger and... Yeah, sure. Why not you?",1,sarcastic,sarcastic
+"Notify the editors of the Oxford English Dictionary. The word ""plenty"" has been redefined to mean ""two.""",1,sarcastic,sarcastic
+"I understand your point, but given a choice, Jews always go with Chinese food.",1,sarcastic,sarcastic
+"Yeah, terrific. The other astronauts would love to go hurtling through space with a guy named ""Crash.""",1,sarcastic,sarcastic
+"Hope your hands are steady. It's the width of a single hair. But this is just biology, so I'm sure it's no problem for a genius like you.",1,sarcastic,sarcastic
+"Also instead of just living in your mother's house, you could actually live inside her body.",1,sarcastic,sarcastic
+"You know, the holidays are just around the corner. Maybe he wants to see if he can lodge the other testicle up there.",1,sarcastic,sarcastic
+It's why my people wandered the desert for 40 years. Took that long to walk it off.,1,sarcastic,sarcastic
+"Leonard, may I present, live from New Delhi, Dr. and Mrs. V. M. Koothrappali.",0,literal,sarcastic
+Don't you think looking for a new city to live in is a bit of an overreaction?,0,literal,sarcastic
+What did you mean when you said you were going to miss me?,0,literal,literal
+Let's not talk about this in front of our friends.,0,literal,literal
+I can't believe we wasted all that time on our Hulk costumes.,0,literal,sarcastic
+I'm not saying that you're not fun. You're the most fun person I know.,0,literal,sarcastic
+"Uh, so how many cameras are actually on you.",1,sarcastic,sarcastic
+Yeah either that or gloria estefan was right eventually the rhythm is going to get you,1,sarcastic,sarcastic
+"If that doesn't keep kids in school, what will?",1,sarcastic,sarcastic
+"Oh Oh, I am convinced!",1,sarcastic,sarcastic
+Well thank God your livelihood doesn't depend on it.,1,sarcastic,sarcastic
+Oh tons. I am quite the woodsman.,1,sarcastic,sarcastic
+"Oh I see, I thought you just really really liked your new couch.",1,sarcastic,sarcastic
+"Well, it will probably slow me down at first. But once I am used to the extra weight, I ll get back on track.",1,sarcastic,literal
+"He's right, even if it's to say something complementary.",0,literal,literal
+You're gonna have to tell me how you did that.,0,literal,literal
+Uh-huh!,0,literal,sarcastic
+You had no relationship!!,0,literal,sarcastic
+"Are you kidding? I love that guy!  Morning's here! Morning is here,",0,literal,sarcastic
+"All right, let's do it.",0,literal,literal
