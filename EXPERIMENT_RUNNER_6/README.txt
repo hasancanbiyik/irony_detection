@@ -3,9 +3,9 @@ MULTILINGUAL SARCASM DETECTION EXPERIMENT
 Fine-tuning XLM-RoBERTa on English, German, Arabic, Chinese, and Korean
 ================================================================================
 
-1. PROJECT OVERVIEW
+1. EXPERIMENT OVERVIEW
 --------------------------------------------------------------------------------
-This project explores the capabilities of multilingual Large Language Models (LLMs) 
+This experiment explores the capabilities of multilingual Large Language Models (LLMs) 
 in detecting sarcasm across typologically diverse languages. Specifically, we 
 investigate whether "More Data" (Massive Multilingual Training) or "Balanced Data" 
 (Equal representation per language) yields better performance, particularly for 
