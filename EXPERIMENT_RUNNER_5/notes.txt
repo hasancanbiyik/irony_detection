@@ -1,0 +1,55 @@
+
+
+--- NEW RUN: 2025-11-22 13:46:10.255205 ---
+Fine-tuning Twitter RoBERTa on English dataset
+MODEL_NAME: cardiffnlp/twitter-roberta-base-sentiment
+NUM_EPOCHS: 5
+LEARNING_RATE: 2e-5
+DURATION: 0.00 seconds
+
+
+--- NEW RUN: 2025-11-22 13:46:27.850768 ---
+Fine-tuning Twitter RoBERTa on English dataset
+MODEL_NAME: cardiffnlp/twitter-roberta-base-sentiment
+NUM_EPOCHS: 5
+LEARNING_RATE: 2e-5
+DURATION: 25.43 seconds
+
+
+--- NEW RUN: 2025-11-22 13:50:10.171471 ---
+Fine-tuning Twitter RoBERTa on English dataset
+MODEL_NAME: cardiffnlp/twitter-roberta-base-sentiment
+NUM_EPOCHS: 5
+LEARNING_RATE: 2e-5
+DURATION: 1.80 seconds
+
+
+--- NEW RUN: 2025-11-22 13:51:20.427229 ---
+Fine-tuning Twitter RoBERTa on English dataset
+MODEL_NAME: cardiffnlp/twitter-roberta-base-sentiment
+NUM_EPOCHS: 5
+LEARNING_RATE: 2e-5
+
+
+--- NEW RUN: 2025-11-22 14:48:31.345796 ---
+Fine-tuning Twitter RoBERTa on English dataset
+MODEL_NAME: cardiffnlp/twitter-roberta-base-sentiment
+NUM_EPOCHS: 5
+LEARNING_RATE: 2e-5
+DURATION: 1569.83 seconds
+
+
+--- NEW RUN: 2025-11-22 15:18:08.052062 ---
+Fine-tuning Twitter RoBERTa on English dataset
+MODEL_NAME: cardiffnlp/twitter-roberta-base-sentiment
+NUM_EPOCHS: 5
+LEARNING_RATE: 2e-5
+DURATION: 1632.61 seconds
+
+
+--- NEW RUN: 2025-12-07 15:40:50.168258 ---
+Fine-tuning Twitter RoBERTa on English dataset
+MODEL_NAME: FacebookAI/xlm-roberta-base
+NUM_EPOCHS: 4
+LEARNING_RATE: 2e-5
+DURATION: 1341.29 seconds
